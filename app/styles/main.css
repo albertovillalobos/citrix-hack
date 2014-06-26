@@ -1,0 +1,100 @@
+html, body, .app-container.ng-scope {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+
+body {
+	background-color: #f2f2f2;
+}
+.vertical-container {
+	display: table;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+
+}
+
+.vertical-content {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.tagline {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.tiled-background {
+	height: 100%;
+	width: 100%;
+	background-color: #1E1D1D;
+	background-image: url('http://i.imgur.com/Pr4QCTw.png');
+	color: white;	
+}
+
+
+
+/* ANIMATIONS
+============================================================================= */
+
+/* leaving animations ----------------------------------------- */
+/* rotate and fall */
+@keyframes rotateFall {
+	0% 		{ transform: rotateZ(0deg); }
+	20% 	{ transform: rotateZ(10deg); animation-timing-function: ease-out; }
+	40% 	{ transform: rotateZ(17deg); }
+	60% 	{ transform: rotateZ(16deg); }
+	100% 	{ transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+	to 		{ transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+	from 	{ opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+	from 	{ transform:translateX(100%); }
+	to 		{ transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+	from 	{ transform:translateY(100%); }
+	to 		{ transform: translateY(0); }
+}
+
+.ng-enter 			{ animation: scaleUp 0.5s both ease-in; z-index: 8888; }
+.ng-leave 			{ animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }
+
+
+
+@media  (min-width: 768px) {
+
+	.nav.nav-pills.pull-right > li {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.nav.nav-pills.pull-right > li > .glyphicon.glyphicon-plus {
+		line-height: 2.25;
+	}	
+	
+	.container {
+		max-width: 730px;
+	}
+}
+
