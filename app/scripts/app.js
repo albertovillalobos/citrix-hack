@@ -4,8 +4,7 @@ angular.module('personalsiteAngularApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute',
-  'ngAnimate'
+  'ngRoute'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
