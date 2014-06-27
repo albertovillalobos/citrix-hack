@@ -19,9 +19,32 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<input type="text" class="form-control" placeholder="Search" style="width: auto; margin: 0 auto; font-size: 36px; height: auto; border-radius: 0px; border: none;">
+					<input type="text" class="form-control" ng-model='emails' placeholder="Search" style="width: auto; margin: 0 auto; font-size: 36px; height: auto; border-radius: 0px; border: none;">
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<button class="btn btn-lg btn-success" ng-click='createHang(emails)'>Hang out</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<table class="table ">
+						<tr ng-repeat="event in potentialEvents" class="{{event.status}}-time">
+							<td>
+								<div class="time-container">
+									Available from {{event.starttime}} to {{event.endtime}}
+								</div>
+								<div class=""><h1 ng-click='createEvent'>{{event.name}}</h1></div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+
+
 		</div>
 	</div>
 

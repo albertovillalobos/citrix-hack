@@ -3,7 +3,7 @@
 angular.module('personalsiteAngularApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
 
-    $scope.username = "Brent Kirkland";
+    $scope.username = "Alberto Villalobos";
 
     $scope.menu = [{
       'title': 'Home',

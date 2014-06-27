@@ -9,7 +9,12 @@ body {
 }
 
 td {
-	border-style: none !important;
+	/*border-style: none !important;*/
+}
+
+.row {
+	margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 .vertical-container {
 	display: table;
