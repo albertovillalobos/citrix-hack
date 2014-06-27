@@ -24,15 +24,18 @@ angular.module('personalsiteAngularApp')
 
   		{
   			name:'Liam Cardenas',
-  			status: 'comfirmed'  			
+  			starttime: '7:30 pm',
+        endtime: '9:30pm'
   		},
       {
         name:'Nick Brown',
-        status: 'pending'
+        starttime: '7:30 pm',
+        endtime: '9:30pm'
       },
       {
         name:'Brent Kirkland',
-        status: 'pending'
+        starttime: '7:30 pm',
+        endtime: '9:30pm'
       },
   	];
 
