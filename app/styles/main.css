@@ -2,6 +2,7 @@ html, body, .app-container.ng-scope {
 	padding: 0px;
 	margin: 0px;
 	height: 100%;
+	width: 100%;
 }
 
 body {
@@ -26,6 +27,7 @@ td {
 
 .vertical-content {
 	height: 100%;
+	width: 100%;
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -82,6 +84,7 @@ td {
 	color: white;
 }
 
+
 /* ANIMATIONS
 ============================================================================= */
 
@@ -123,9 +126,23 @@ td {
 	to 		{ transform: translateY(0); }
 }
 
-.ng-enter 			{ animation: scaleUp 0.5s both ease-in; z-index: 8888; }
+.ng-enter 			{ animation: slideInRight 0.5s both ease-in; z-index: 8888; }
 .ng-leave 			{ animation: slideOutLeft 0.5s both ease-in; z-index: 9999; }
+/*
+.ng-enter 		{ animation: scaleUp 0.5s both ease-in; z-index: 8888; }
+.ng-leave         { transform-origin: 0% 0%; animation: rotateFall 1s both ease-in; z-index: 9999}
+*/
+/*
+.ng-enter {
+	z-index: 8888;
+	animation: slideInRight 0.5s both ease-in;
 
+}
+
+.ng-leave {
+	z-index: 9999;
+	animation: slideInLeft 0.5s both ease-in;
+}*/
 
 
 @media  (min-width: 768px) {
