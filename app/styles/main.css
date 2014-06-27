@@ -7,6 +7,10 @@ html, body, .app-container.ng-scope {
 body {
 	background-color: #f2f2f2;
 }
+
+td {
+	border-style: none !important;
+}
 .vertical-container {
 	display: table;
 	height: 100%;
@@ -35,6 +39,34 @@ body {
 }
 
 
+.busy-time {
+	border-style: none;
+	background-color: #a7d4f2;
+	color: white;
+}
+
+.potential-time {
+	border-style: none;
+	background-color: #0071bc;
+	color: white;
+}
+
+
+.comfirmed-time {
+	border-style: none;
+	background-color: #00a99d;
+	color: white;
+}
+
+.empty-time {
+	background-color: white;
+	color: black;
+}
+
+.date-container {
+	background-color: #333;
+	color: white;
+}
 
 /* ANIMATIONS
 ============================================================================= */
@@ -97,4 +129,3 @@ body {
 		max-width: 730px;
 	}
 }
-
