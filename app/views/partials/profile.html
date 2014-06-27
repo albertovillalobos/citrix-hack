@@ -1,17 +1,9 @@
 <div class="container">
   <div ng-include="'partials/navbar'"></div>
   <table class="table ">
-  	<tr class="date-container">
-  		<td>
-  			Wednesday, June 25 2014
-  		</td>
-  	</tr>
   	<tr ng-repeat="event in events" class="{{event.status}}-time">
   		<td>
-  			<div class="time-container">
-  				{{event.starttime}} to {{event.endtime}}
-  			</div>
-  			<div class=""><h1>{{event.name}}</h1></div>
+  			<div class="">{{event.status}}<h1>{{event.name}}</h1></div>
   		</td>
   	</tr>
   </table>

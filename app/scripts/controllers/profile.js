@@ -18,27 +18,22 @@ angular.module('personalsiteAngularApp')
 
 
 
+
   	// Array of events
   	$scope.events = [
 
   		{
-  			name:'Ask to Hang with Liam',
-  			starttime: '9:30',
-  			endtime: '10:00',
-  			status: 'potential'  			
+  			name:'Liam Cardenas',
+  			status: 'comfirmed'  			
   		},
-  		{
-  			name: 'You are hanging out with Liam',
-  			starttime: '10:30',
-  			endtime: '11:30',
-  			status: 'comfirmed'
-  		},
-  		// {
-  		// 	name: '',
-  		// 	starttime: '11:30',
-  		// 	endtime:'24:00',
-  		// 	status: 'empty'
-  		// }
+      {
+        name:'Nick Brown',
+        status: 'pending'
+      },
+      {
+        name:'Brent Kirkland',
+        status: 'pending'
+      },
   	];
 
 

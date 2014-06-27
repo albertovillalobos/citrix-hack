@@ -12,7 +12,7 @@ angular.module('personalsiteAngularApp', [
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
-      .when('/hang', {
+      .when('/hang', {   
         templateUrl: 'partials/profile',
         controller: 'ProfileCtrl'
       })

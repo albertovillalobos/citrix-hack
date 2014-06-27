@@ -39,8 +39,10 @@ td {
 	height: 100%;
 	width: 100%;
 	background-color: #1E1D1D;
-	background-image: url('http://i.imgur.com/Pr4QCTw.png');
+	background-image: url('http://i.imgur.com/6V1s86m.png');
 	color: white;	
+	background-size: cover;
+	background-position: center;
 }
 
 
@@ -54,6 +56,13 @@ td {
 	border-style: none;
 	background-color: #0071bc;
 	color: white;
+}
+
+.pending-time {
+
+	background-color: #0071bc;
+	color: white;
+
 }
 
 
