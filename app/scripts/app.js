@@ -10,19 +10,23 @@ angular.module('personalsiteAngularApp', [
     $routeProvider
       .when('/', {
         templateUrl: 'partials/main',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+
       })
       .when('/hang', {   
         templateUrl: 'partials/profile',
-        controller: 'ProfileCtrl'
+        controller: 'ProfileCtrl',
+        authenticate: true
       })
       .when('/newhang', {
         templateUrl: 'partials/newhang',
-        controller: 'NewhangCtrl'
+        controller: 'NewhangCtrl',
+        authenticate: true
       })
       .when('/hangtime', {
         templateUrl: 'partials/hangtime',
-        controller: 'HangtimeCtrl'
+        controller: 'HangtimeCtrl',
+        authenticate: true
       })      
       .when('/login', {
         templateUrl: 'partials/login',
@@ -30,7 +34,7 @@ angular.module('personalsiteAngularApp', [
       })
       .when('/signup', {
         templateUrl: 'partials/signup',
-        controller: 'SignupCtrl'
+        controller: 'SignupCtrl',
       })
       .when('/settings', {
         templateUrl: 'partials/settings',

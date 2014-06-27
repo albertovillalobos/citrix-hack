@@ -15,7 +15,7 @@ angular.module('personalsiteAngularApp')
         })
         .then( function() {
           // Logged in, redirect to home
-          $location.path('/');
+          $location.path('/hang');
         })
         .catch( function(err) {
           err = err.data;
