@@ -131,8 +131,8 @@ td {
 @media  (min-width: 768px) {
 
 	.nav.nav-pills.pull-right > li {
-		margin-left: 20px;
-		margin-right: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
 	.nav.nav-pills.pull-right > li > .glyphicon.glyphicon-plus {
