@@ -1,0 +1,10 @@
+<div class="container">
+  <div ng-include="'partials/navbar'"></div>
+  <table class="table">
+  	<tr ng-repeat="event in events" class="{{event.status}}-time">
+  		<td>
+  			<div class="">{{event.status}}<h1>{{event.name}}</h1></div>
+  		</td>
+  	</tr>
+  </table>
+</div>
