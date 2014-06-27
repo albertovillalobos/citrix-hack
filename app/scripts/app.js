@@ -20,6 +20,10 @@ angular.module('personalsiteAngularApp', [
         templateUrl: 'partials/newhang',
         controller: 'NewhangCtrl'
       })
+      .when('/hangtime', {
+        templateUrl: 'partials/hangtime',
+        controller: 'HangtimeCtrl'
+      })      
       .when('/login', {
         templateUrl: 'partials/login',
         controller: 'LoginCtrl'

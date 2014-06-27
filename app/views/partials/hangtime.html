@@ -1,9 +1,9 @@
 <div class="container">
   <div ng-include="'partials/navbar'"></div>
   <table class="table table-bordered table-striped">
-  	<tr ng-repeat="friend in friends" class='' >
+  	<tr ng-repeat="event in events" class='' >
   		<td>
-  			<h1>{{friend.name}}</h1>
+  			<div class="">From {{event.starttime}} to {{event.endtime}}</div>
   		</td>
   	</tr>
   </table>
